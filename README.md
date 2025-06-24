@@ -71,4 +71,5 @@ Severity distribution indicates a balanced risk across all three levels (Fatal, 
 
 ![Image](https://github.com/user-attachments/assets/37991fe3-48f4-4739-b79d-f924feba2d01)
 
+![Image](https://github.com/user-attachments/assets/f0631d4c-cf34-41d0-88b6-221cfc953fb7)
 
