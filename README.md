@@ -67,6 +67,8 @@ Motorcycles were the most common vehicle involved in accidents.
 
 Severity distribution indicates a balanced risk across all three levels (Fatal, Serious, Slight).
 
+*Output*
 
+![Image](https://github.com/user-attachments/assets/37991fe3-48f4-4739-b79d-f924feba2d01)
 
 
