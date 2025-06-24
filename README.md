@@ -12,36 +12,61 @@
 
 *MENTOR*: NEELA SANTHOSH
 
-Big Data Analysis: Indian Accident Analysis
+**Big Data Analysis: Indian Accident Analysis**
+
+All steps from data loading to deriving insights, were executed using PySpark on Google Colab with proper Spark setup and configuration.
 
 *Tools Used*: Google Colab + PySpark, pyspark.sql for querying and aggregations, Spark functions for date/time parsing, grouping, and filtering
 
-*Analysis Performed*:
+Environment Setup
+1. Installed OpenJDK 8, downloaded and extracted Apache Spark, and configured environment variables.
 
-Data cleaning and schema inspection
+Installed PySpark and Findspark to link Jupyter/Colab with Spark runtime.
 
-Count and distribution of missing values
+2. Data Loading and Schema Inspection
+   
+Loaded the dataset using spark.read.csv(), inferred the schema, and explored initial rows.
 
-State-wise and weather-wise accident frequency
+3. Data Cleaning
+   
+Counted total rows and null values in each column using isNull() and when() functions.
 
-Accidents grouped by month and year
+Since there were no significant missing values, no data was dropped or imputed.
 
-Severity-level analysis
+4. Exploratory Data Analysis (EDA)
+   
+Using PySpark's SQL-like operations:
 
-*EDA Highlights*:
+State-wise accident count: Top 3 states were Tripura (TR), Delhi (DL), and Gujarat (GJ).
 
-Top states with highest accident counts: Tripura, Delhi, Gujarat
+Weather-wise analysis: Foggy weather had the most accidents.
 
-Most common vehicle types involved: Motorcycles, Trucks
+Severity distribution: Fatal, Serious, and Slight accidents were almost evenly distributed.
 
-Weather conditions with most accidents: Fog
+Vehicle type: Motorcycles and trucks were involved in most accidents.
 
-Peak months for accidents: March and October
+Monthly trends: March and October had the highest accident counts.
 
-Severity Levels:
+Year-wise comparison: 2023 showed slightly fewer accidents than 2022.
 
-Serious: 349 cases
+5. Time-based Analysis
+   
+Converted date column using to_date() and extracted year and month.
 
-Slight: 326 cases
+Grouped accidents by month and year to visualize trends.
 
-Fatal: 325 cases
+*KEY INSIGHTS*
+
+Fog was the weather condition during most severe accidents.
+
+Accidents were consistently high in March and October across years.
+
+Tripura, Delhi, and Gujarat recorded the highest number of accidents in this dataset.
+
+Motorcycles were the most common vehicle involved in accidents.
+
+Severity distribution indicates a balanced risk across all three levels (Fatal, Serious, Slight).
+
+
+
+
